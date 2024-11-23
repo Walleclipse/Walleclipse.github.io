@@ -8,7 +8,7 @@ author: "Abulikemu Abuduweili"
 authors: "<strong>Abulikemu Abuduweili</strong>,  Changliu Liu"
 venue: "Conference on Robot Learning (CoRL)"
 location: "Atlanta, Georgia, USA"
-arxiv: https://proceedings.mlr.press/v229/abuduweili23a/abuduweili23a.pdf 
+arxiv: https://openreview.net/forum?id=4x2RUQ99sGz 
 code: https://github.com/intelligent-control-lab/Feedforward_Adaptation 
 youtube: https://www.youtube.com/watch?v=fB9-UE3Q4bE
 ---

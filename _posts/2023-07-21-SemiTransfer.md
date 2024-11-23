@@ -7,7 +7,7 @@ categories: research
 author: "Abulikemu Abuduweili"
 authors: "Xingjian Li*, <strong>Abulikemu Abuduweili*</strong>,  Humphrey Shi, Pengkun Yang, Dejing Dou, Haoyi Xiong, Chengzhong Xu"
 venue: "Pattern Recognition"
-arxiv: https://openaccess.thecvf.com/content/CVPR2021/papers/Abuduweili_Adaptive_Consistency_Regularization_for_Semi-Supervised_Transfer_Learning_CVPR_2021_paper.pdf 
+arxiv: https://doi.org/10.1016/j.patcog.2023.109831 
 code: https://github.com/SHI-Labs/Semi-Supervised-Transfer-Learning 
 ---
 
