@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Proactive human-robot co-assembly: Leveraging human intention prediction and robust safe control"
+title:  "Proactive Human-Robot Co-Assembly: Leveraging Human Intention Prediction and Robust Safe Control"
 date:   2023-08-16 18:08:39 +00:00
 image: /images/ccta23.gif
 categories: research

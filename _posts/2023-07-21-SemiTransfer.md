@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Semi-supervised transfer learning with hierarchical self-regularization"
+title:  "Semi-Supervised Transfer Learning with Hierarchical Self-Regularization"
 date:   2023-07-21 18:08:39 +00:00
 image: /images/Adaptive-KD.png
 categories: research
