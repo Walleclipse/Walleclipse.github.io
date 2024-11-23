@@ -11,6 +11,7 @@ location: "Atlanta, Georgia, USA"
 arxiv: https://openreview.net/forum?id=4x2RUQ99sGz 
 code: https://github.com/intelligent-control-lab/Feedforward_Adaptation 
 youtube: https://www.youtube.com/watch?v=fB9-UE3Q4bE
+highlight: true
 ---
 
 This work proposes an online adaptation method with feedforward compensation that optimizes the prediction model using critical data samples 

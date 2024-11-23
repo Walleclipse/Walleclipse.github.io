@@ -105,7 +105,7 @@
               <h2>Research</h2>
               <p>
                 I'm broadly interested in the intersection of robotics and machine learning, with a focus on areas such as robot learning, human-robot collaboration, optimization, continual learning, data-efficient learning, and robot vision.
-                Below is a list of my research works  (* denotes equal contribution). For a full publication list, please visit my <a href="https://scholar.google.com/citations?user=6Oro5g8AAAAJ">Google Scholar</a>.
+                Below is a list of my research works  (* denotes equal contribution). Some papers are <span class="highlight">highlighted</span>. For a full publication list, please visit my <a href="https://scholar.google.com/citations?user=6Oro5g8AAAAJ">Google Scholar</a>.
               </p>
             </td>
           </tr>
@@ -115,7 +115,7 @@
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
-          <tr style="{% if post.highlight %}background-color: #ffffcc;{% endif %}">
+          <tr style="{% if post.highlight %}background-color: rgba(255, 255, 204, 0.5);{% endif %}">
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:400px">
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
