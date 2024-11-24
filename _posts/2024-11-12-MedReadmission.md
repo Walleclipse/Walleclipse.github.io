@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Machine Learning-Based Clinical Predictive Models for Early Readmission in Patients with Cardiogenic Shock"
-date:   2020-12-21 18:08:39 +00:00
+date:   2024-11-12 18:08:39 +00:00
 image: /images/Cardiogenic.png
 categories: med
 author: "Abulikemu Abuduweili"
