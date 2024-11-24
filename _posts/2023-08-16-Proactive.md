@@ -9,7 +9,8 @@ authors: "Ruixuan Liu, Rui Chen, <strong>Abulikemu Abuduweili</strong>,  Changli
 venue: "IEEE Conference on Control Technology and Applications (CCTA)"
 location: "Bridgetown, Barbados"
 arxiv: https://ieeexplore.ieee.org/abstract/document/10252579 
-website: http://icontrol.ri.cmu.edu/news/2022FordDemo.html 
+blog: http://icontrol.ri.cmu.edu/news/2022FordDemo.html 
+news: https://www.cs.cmu.edu/news/2022/robot-perception-action
 ---
 
 This paper presents an integrated framework for proactive HRC. A robust intention prediction module, which leverages prior task information and 
