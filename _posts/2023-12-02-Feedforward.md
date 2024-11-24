@@ -10,7 +10,7 @@ venue: "Conference on Robot Learning (CoRL)"
 location: "Atlanta, Georgia, USA"
 arxiv: https://openreview.net/forum?id=4x2RUQ99sGz 
 code: https://github.com/intelligent-control-lab/Feedforward_Adaptation 
-youtube: https://www.youtube.com/watch?v=fB9-UE3Q4bE
+video: https://www.youtube.com/watch?v=fB9-UE3Q4bE
 highlight: true
 ---
 

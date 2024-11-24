@@ -10,7 +10,7 @@ venue: "AAAI Fall Symposium Series, AI for HRI"
 location: "Arlington, Virginia, USA"
 arxiv: https://arxiv.org/abs/1909.05089
 code: https://github.com/intelligent-control-lab/Intent_Traj_Prediction
-youtube: https://www.youtube.com/watch?v=LgtkWJ_oCR0
+video: https://www.youtube.com/watch?v=LgtkWJ_oCR0
 ---
 
 This paper introduces a method for predicting human trajectories and intentions using a multi-task model adaptable to diverse individuals. 
