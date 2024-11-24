@@ -6,7 +6,7 @@ image: /images/Robustness.png
 categories: research
 author: "Abulikemu Abuduweili"
 authors: "<strong>Abulikemu Abuduweili</strong>, Changliu Liu"
-venue: "CoRL Workshop on Safe and Robust Robot Learning for Operation in the Real World, <strong>[Oral Presentation]</strong>"
+venue: "CoRL Workshop on Safe and Robust Robot Learning for Operation in the Real World <strong>[Oral Presentation]</strong>"
 location: "Munich, Germany"
 arxiv: https://openreview.net/forum?id=Mk2pq3Gjq1
 ---
