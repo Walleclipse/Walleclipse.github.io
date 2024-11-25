@@ -6,7 +6,7 @@ image: /images/StackingExp.jpg
 categories: optics
 author: "Abulikemu Abuduweili"
 authors: "Bowei Yang, Guanyu Liu, <strong>Abulikemu Abuduweili</strong>,  Yan Wang, Aimin Wang, and Zhigang Zhang"
-venue: "Conference on Lasers and Electro-Optics"
+venue: "Conference on Lasers and Electro-Optics (CLEO)"
 arxiv: https://opg.optica.org/abstract.cfm?uri=CLEO_SI-2020-JW2F.28
 ---
 

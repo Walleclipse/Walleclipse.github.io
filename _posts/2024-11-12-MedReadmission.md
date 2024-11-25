@@ -6,7 +6,7 @@ image: /images/Cardiogenic.png
 categories: med
 author: "Abulikemu Abuduweili"
 authors: "Xiarepati Tieliwaerdi, <strong>Abulikemu Abuduweili</strong>,  Erasmus Mutabi, Kathryn Manalo, Matthew Lander"
-venue: "American Heart Association's Scientific Session, Circulation (Abstract)"
+venue: "American Heart Association's Scientific Session (AHA), Circulation (Abstract)"
 arxiv: https://www.ahajournals.org/doi/abs/10.1161/circ.150.suppl_1.4144774
 ---
 
