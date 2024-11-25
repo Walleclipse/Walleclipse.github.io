@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sub-ps resolution clock-offset measurement over a 114 km fiber link using linear optical sampling"
+title:  "Sub-ps Resolution Clock-Offset Measurement over a 114 km Fiber Link using Linear Optical Sampling"
 date:   2020-12-21 18:08:39 +00:00
 image: /images/Timing.png
 categories: optics
