@@ -228,85 +228,6 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Side Projects</h2>
-              <p> These include courseworks and side projects. 
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'project' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:400px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              {% if post.venue %}
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              {% endif %}
-              {% if post.award %}
-              <br>
-              <h3>{{post.award}}</h3>
-              {% endif %}
-              {% if post.collaborator %}
-              <br>
-              In collaboration with <em>{{post.collaborator}}</em>
-              {% endif %}
-              {% if post.sponsor %}
-              <br>
-              In part supported by <em>{{post.sponsor}}</em>
-              {% endif %}
-              {% if post.course %}
-              <br>
-              <em>{{post.course}}</em>
-              {% endif %}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">paper</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              {% if post.news %}
-              <a href="{{post.news}}">news</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Side Research</h2>
               <p> During my master's studies, I gained research experience in optics and lasers. Additionally, I have been involved in collaborative projects that explore the intersection of AI and medicine. Below are some of the papers I have contributed to.
               </p>
@@ -381,7 +302,86 @@
           {% endfor %}
         </table>
 
-        
+        <br>
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Side Projects</h2>
+              <p> These include courseworks and side projects.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'project' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:400px">
+              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
+
+              {% if post.venue %}
+              <br>
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              {% endif %}
+              {% if post.award %}
+              <br>
+              <h3>{{post.award}}</h3>
+              {% endif %}
+              {% if post.collaborator %}
+              <br>
+              In collaboration with <em>{{post.collaborator}}</em>
+              {% endif %}
+              {% if post.sponsor %}
+              <br>
+              In part supported by <em>{{post.sponsor}}</em>
+              {% endif %}
+              {% if post.course %}
+              <br>
+              <em>{{post.course}}</em>
+              {% endif %}
+              <br>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">paper</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.youtube %}
+              <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+              {% if post.news %}
+              <a href="{{post.news}}">news</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        <br>
         <!-- Footer -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
