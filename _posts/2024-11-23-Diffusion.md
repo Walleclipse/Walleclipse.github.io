@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  "Enhancing Sample Generation of Diffusion Models using Noise Level Estimation"
+title:  "Enhancing Sample Generation of Diffusion Models using Noise Level Correction"
 date:   2024-11-22 18:08:39 +00:00
 image: /images/Diffusion.png
 categories: research
 author: "Abulikemu Abuduweili"
-authors: "<strong>Abulikemu Abuduweili</strong>, Chenyang Yuan, Frank Permenter, Changliu Liu"
+authors: "<strong>Abulikemu Abuduweili</strong>, Chenyang Yuan, Changliu Liu, Frank Permenter"
 venue: " In submission; Arxiv preprint"
 arxiv: https://arxiv.org/
 ---
 
 
 
- In diffusion models, the noise level of the noisy samples approximates the distance between the noisy samples and the underlying manifold. 
- Building on this insight, we propose a novel method to enhance sample generation quality by estimating the noise level. 
- We introduce a noise level estimation network that is on top of the pre-trained denoising network.  Additionally, we extend our approach 
- to tackle a variety of image restoration tasks, such as inpainting, deblurring, super-resolution, colorization, and compressed sensing.
+In diffusion models, the noise level in noisy samples approximates their distance to the underlying manifold.
+Building on this insight, we propose a novel method to enhance sample generation by aligning the estimated noise level with the true distance of noisy samples to the manifold.
+We introduce a noise level correction network built to refine noise level estimates during the denoising process, and can be applied on top of any existing denoising scheduler (e.g., DDIM). 
+ Furthermore, we extend this approach to various image restoration tasks by integrating task-specific constraints, including inpainting, deblurring, super-resolution, colorization, and compressed sensing.
