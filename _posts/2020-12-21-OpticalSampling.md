@@ -10,6 +10,4 @@ venue: "Optics Express"
 arxiv: https://opg.optica.org/oe/fulltext.cfm?uri=oe-28-26-39400&id=444753
 ---
 
-We demonstrate a sub-ps resolution clock-offset measurement based on linear optical sampling technique via a 114 km fiber link by transferring a dual optical frequency comb. 
-The time deviation between two distance clocks is 110 fs at 1 s and 22 fs at 100 s averaging, and the standard deviation of the measured clock offset is 237 fs. 
-This sub-ps level of clock offset measurement should benefit many time synchronization applications via long fiber links.
+This work demonstrates sub-ps resolution clock-offset measurement using linear optical sampling with dual optical frequency combs over a 114 km fiber link, achieving a time deviation of 110 fs at 1 s and 22 fs at 100 s averaging. This advance supports precise time synchronization in long fiber link applications.

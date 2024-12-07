@@ -11,6 +11,4 @@ arxiv: https://arxiv.org/abs/2411.14321
 ---
 
 
-This paper propose a continual learning algorithm designed to iteratively refine Koopman dynamics for high-dimensional legged robots. 
-Theoretical analysis shows that the linear approximation error of our method converges monotonically. Experimental results demonstrate that 
-our method achieves high control performance on robots like Unitree G1/H1/A1/Go2 and ANYmal D, across various terrains using linear MPC controllers. 
+This paper presents a continual learning algorithm for iteratively refining Koopman dynamics in high-dimensional legged robots. The method ensures monotonic convergence of linear approximation error and achieves high control performance on Unitree and ANYmal robots across diverse terrains with linear MPC controllers.

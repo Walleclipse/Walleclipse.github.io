@@ -13,6 +13,4 @@ blog: http://icontrol.ri.cmu.edu/news/2022FordDemo.html
 news: https://www.cs.cmu.edu/news/2022/robot-perception-action
 ---
 
-This paper presents an integrated framework for proactive HRC. A robust intention prediction module, which leverages prior task information and 
-human-in-the-loop training, is learned to guide the robot for efficient collaboration. The proposed framework also uses robust safe control 
-to ensure interactive safety under uncertainty. The developed framework is applied to a co-assembly task using a Kinova Gen3 robot.
+This paper introduces a framework for proactive human-robot collaboration, featuring intention prediction with human-in-the-loop training and robust safe control for interactive safety. The framework is demonstrated on a co-assembly task with a Kinova Gen3 robot.

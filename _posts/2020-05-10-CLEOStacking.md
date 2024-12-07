@@ -10,6 +10,4 @@ venue: "Conference on Lasers and Electro-Optics (CLEO)"
 arxiv: https://opg.optica.org/abstract.cfm?uri=CLEO_SI-2020-JW2F.28
 ---
 
-Pulse and beam combination has become the preferred approach for achieving high pulse energy in lasers. 
-We demonstrate the coherent stacking of 128 pulses from a 0.95 GHz repetition rate femtosecond Yb:fiber laser using a delay line 
-and polarization control. To the best of our knowledge, this is the first instance of successfully stacking 128 ultrashort pulses.
+This work demonstrates the coherent stacking of 128 ultrashort pulses from a 0.95 GHz femtosecond Yb:fiber laser using a delay line and polarization control, marking the first successful implementation of stacking 128 pulses.

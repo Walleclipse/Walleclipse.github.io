@@ -13,8 +13,4 @@ code: https://github.com/SHI-Labs/Semi-Supervised-Transfer-Learning
 
 
 
-To enable transfer learning in semi-supervised settings, we propose a hierarchical self-regularization mechanism that enhances 
-the utilization of unlabeled samples. This approach introduces a novel self-regularizer, combining individual-level and population-level 
-regularization terms. The samples contributing to both regularizers are weighted using an adaptive strategy, where the self-regularization 
-effects are dynamically adjusted based on each sample's confidence. 
-Additionally, the proposed self-regularization enhances performance also in fully-supervised and self-supervised settings.
+This paper proposes a hierarchical self-regularization mechanism for transfer learning in semi-supervised settings, combining individual- and population-level regularizers with adaptive weighting based on sample confidence. The method also improves performance in fully-supervised and self-supervised tasks.

@@ -11,6 +11,4 @@ arxiv: https://arxiv.org/abs/2405.04812
 code: https://github.com/MetaSLAM/GPRS_Survey 
 ---
 
-In this work, we provide a comprehensive survey of state-of-the-art methods for long-term localization, highlighting key advancements and 
-exploring future directions and opportunities in the field. This paper serves as both a tutorial for researchers new to the place recognition 
-community and a valuable resource for those interested in advancing long-term robotics autonomy.
+This paper surveys state-of-the-art methods in long-term localization, offering insights into key advancements and future opportunities. It serves as a tutorial for newcomers and a resource for advancing long-term robotics autonomy.

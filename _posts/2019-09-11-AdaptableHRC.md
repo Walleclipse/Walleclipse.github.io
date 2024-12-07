@@ -13,6 +13,5 @@ code: https://github.com/intelligent-control-lab/Intent_Traj_Prediction
 video: https://www.youtube.com/watch?v=LgtkWJ_oCR0
 ---
 
-This paper introduces a method for predicting human trajectories and intentions using a multi-task model adaptable to diverse individuals. 
-The proposed approach offers high flexibility and generalizability, enabling rapid integration into human-robot collaboration systems 
-for user-defined tasks.
+
+This paper proposes a multi-task model for predicting human trajectories and intentions, offering flexibility and adaptability for rapid integration into human-robot collaboration systems.

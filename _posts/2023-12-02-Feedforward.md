@@ -14,6 +14,5 @@ video: https://www.youtube.com/watch?v=fB9-UE3Q4bE
 highlight: true
 ---
 
-This work proposes an online adaptation method with feedforward compensation that optimizes the prediction model using critical data samples 
-from a memory buffer rather than relying solely on the latest samples. We demonstrate that this approach achieves a smaller error bound 
-compared to previously used methods in slow time-varying systems, enhancing both accuracy and robustness.
+
+This work introduces an online adaptation method with feedforward compensation, optimizing models using critical data from a memory buffer. It outperforms previous methods in slow time-varying systems, offering improved accuracy and robustness with a smaller error bound.
