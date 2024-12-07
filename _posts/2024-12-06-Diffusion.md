@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Enhancing Sample Generation of Diffusion Models using Noise Level Correction"
-date:   2024-12-07 18:08:39 +00:00
+date:   2024-12-06 18:08:39 +00:00
 image: /images/Diffusion.png
 categories: research
 author: "Abulikemu Abuduweili"
