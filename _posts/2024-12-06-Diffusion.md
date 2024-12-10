@@ -7,7 +7,7 @@ categories: research
 author: "Abulikemu Abuduweili"
 authors: "<strong>Abulikemu Abuduweili</strong>, Chenyang Yuan, Changliu Liu, Frank Permenter"
 venue: " In submission; Arxiv preprint"
-arxiv: https://arxiv.org/
+arxiv: https://arxiv.org/abs/2412.05488
 ---
 
 
