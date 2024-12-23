@@ -2,7 +2,7 @@
 layout: post
 title:  "Continual Learning and Lifting of Koopman Dynamics for Linear Control of Legged Robots"
 date:   2024-11-23 18:08:39 +00:00
-image: /images/KoopmanHumanoid.png
+image: /images/KoopmanHumanoid.gif
 categories: research
 author: "Abulikemu Abuduweili"
 authors: "Feihan Li, <strong>Abulikemu Abuduweili</strong>, Yifan Sun, Rui Chen, Weiye Zhao, Changliu Liu"
