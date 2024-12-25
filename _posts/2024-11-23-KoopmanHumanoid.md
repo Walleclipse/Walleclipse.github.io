@@ -8,6 +8,8 @@ author: "Abulikemu Abuduweili"
 authors: "Feihan Li, <strong>Abulikemu Abuduweili</strong>, Yifan Sun, Rui Chen, Weiye Zhao, Changliu Liu"
 venue: " In submission; Arxiv preprint"
 arxiv: https://arxiv.org/abs/2411.14321
+video: https://youtu.be/5tsSdKkTc4M?feature=shared
+website: https://intelligent-control-lab.github.io/Incremental-Koopman/  
 highlight: true
 ---
 
