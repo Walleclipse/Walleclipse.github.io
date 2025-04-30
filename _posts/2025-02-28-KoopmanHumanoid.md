@@ -10,6 +10,7 @@ venue: " Annual Learning for Dynamics & Control Conference (L4DC)"
 arxiv: https://arxiv.org/abs/2411.14321
 video: https://youtu.be/5tsSdKkTc4M?feature=shared
 website: https://intelligent-control-lab.github.io/Incremental-Koopman/  
+code: https://github.com/intelligent-control-lab/Incremental-Koopman
 highlight: true
 ---
 
