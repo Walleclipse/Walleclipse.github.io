@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Enhancing Sample Generation of Diffusion Models using Noise Level Correction"
-date:   2024-12-06 18:08:39 +00:00
+date:   2025-05-01 18:08:39 +00:00
 image: /images/Diffusion.png
 categories: research
 author: "Abulikemu Abuduweili"
 authors: "<strong>Abulikemu Abuduweili</strong>, Chenyang Yuan, Changliu Liu, Frank Permenter"
-venue: " In submission; Arxiv preprint"
+venue: "Transactions on Machine Learning Research (TMLR)"
 arxiv: https://arxiv.org/abs/2412.05488
 ---
 
