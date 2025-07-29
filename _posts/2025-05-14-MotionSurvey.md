@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Deployable and Generalizable Motion Prediction: Taxonomy, Open Challenges and Future Directions"
+title:  "Trends in Motion Prediction Toward Deployable and Generalizable Autonomy: A Revisit and Perspectives"
 date:   2025-05-14 18:08:39 +00:00
 image: /images/Motionsurvey.png
 categories: research
