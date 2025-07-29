@@ -8,6 +8,7 @@ author: "Abulikemu Abuduweili"
 authors: "Letian Wang, Marc-Antoine Lavoie, Sandro Papais, Barza Nisar, Yuxiao Chen, Wenhao Ding, Boris Ivanovic, Hao Shao, <strong>Abulikemu Abuduweili</strong>, Evan Cook, Yang Zhou, Peter Karkus, Jiachen Li, Changliu Liu, Marco Pavone, Steven Waslander"
 venue: "Arxiv preprint"
 arxiv: https://arxiv.org/abs/2505.09074
+website: https://trends-in-motion-prediction-2025.github.io/
 ---
 
 
