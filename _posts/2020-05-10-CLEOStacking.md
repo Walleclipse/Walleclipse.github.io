@@ -10,4 +10,4 @@ venue: "Conference on Lasers and Electro-Optics (CLEO)"
 arxiv: https://opg.optica.org/abstract.cfm?uri=CLEO_SI-2020-JW2F.28
 ---
 
-This work demonstrates the coherent stacking of 128 ultrashort pulses from a 0.95 GHz femtosecond Yb:fiber laser using a delay line and polarization control, marking the first successful implementation of stacking 128 pulses.
+High-power lasers require combining many weak pulses into one powerful burst—but maintaining coherence is fiendishly difficult. We achieved the first-ever coherent stacking of 128 ultrashort pulses from a GHz-rate femtosecond fiber laser using precisely controlled delay lines and polarization. A milestone in pushing the boundaries of laser pulse combination.

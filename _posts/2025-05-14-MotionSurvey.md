@@ -11,5 +11,4 @@ arxiv: https://arxiv.org/abs/2505.09074
 website: https://trends-in-motion-prediction-2025.github.io/
 ---
 
-
-This survey revisits the generalization and deployability of motion prediction models, with an emphasis on the applications of robotics, autonomous driving, and human motion. It identifies a gap between current benchmark-driven research and real-world deployment, and proposes strategies to improve generalization and integration.
+Motion prediction powers everything from self-driving cars to collaborative robots—but why do models that ace benchmarks often struggle in the real world? This comprehensive survey digs into that gap. We examine the state of motion prediction across robotics, autonomous driving, and human motion analysis, revealing where current approaches fall short of deployment-ready performance. More importantly, we chart a path forward with concrete strategies for building predictors that actually generalize beyond test sets.

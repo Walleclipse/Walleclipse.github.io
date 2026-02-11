@@ -1,0 +1,82 @@
+---
+layout: default
+title: Publications
+---
+
+<div class="container">
+  <header class="page-header">
+    <h1>Publications</h1>
+    <p>Selected research papers (* denotes equal contribution)</p>
+  </header>
+
+  <div class="research-topics">
+    <ul>
+      <li><strong>Continual Learning:</strong> Memory-replay, Dynamic Architecture, Model Adaptation</li>
+      <li><strong>Data-efficient Learning:</strong> Semi/self-supervised Learning, Few-shot Learning</li>
+      <li><strong>Robot Learning:</strong> Human-robot Collaboration, Motion Prediction, Manipulation</li>
+      <li><strong>Robustness and Safety:</strong> Neural Network Robustness, Certified Training</li>
+    </ul>
+  </div>
+
+  <div class="pub-list">
+    {% for post in site.posts %}
+    {% for cat in post.categories %}
+    {% if cat == 'research' %}
+    <article class="pub {% if post.highlight %}highlighted{% endif %}">
+      <div class="pub-image">
+        <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+      </div>
+      <div class="pub-content">
+        <h3 class="pub-title">
+          {% if post.arxiv %}<a href="{{ post.arxiv }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}
+        </h3>
+        <p class="pub-authors">{{ post.authors }}</p>
+        {% if post.venue %}<p class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}</p>{% endif %}
+        {% if post.award %}<p class="pub-award">{{ post.award }}</p>{% endif %}
+        <p class="pub-desc">{{ post.content | strip_html | truncatewords: 30 }}</p>
+        <div class="pub-links">
+          {% if post.arxiv %}<a href="{{ post.arxiv }}" class="link-paper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>Paper</a>{% endif %}
+          {% if post.code %}<a href="{{ post.code }}" class="link-code"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Code</a>{% endif %}
+          {% if post.video %}<a href="{{ post.video }}" class="link-video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Video</a>{% endif %}
+          {% if post.website %}<a href="{{ post.website }}" class="link-default"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Website</a>{% endif %}
+        </div>
+      </div>
+    </article>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+  </div>
+
+  <hr class="section-divider">
+
+  <header class="page-header" style="padding-top: 0;">
+    <h1>Side Research</h1>
+    <p>Work in optics and other areas</p>
+  </header>
+
+  <div class="pub-list">
+    {% for post in site.posts %}
+    {% for cat in post.categories %}
+    {% if cat == 'optics' or cat == 'med' %}
+    <article class="pub">
+      <div class="pub-image">
+        <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+      </div>
+      <div class="pub-content">
+        <h3 class="pub-title">
+          {% if post.arxiv %}<a href="{{ post.arxiv }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}
+        </h3>
+        <p class="pub-authors">{{ post.authors }}</p>
+        {% if post.venue %}<p class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}</p>{% endif %}
+        <p class="pub-desc">{{ post.content | strip_html | truncatewords: 25 }}</p>
+        <div class="pub-links">
+          {% if post.arxiv %}<a href="{{ post.arxiv }}" class="link-paper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>Paper</a>{% endif %}
+          {% if post.code %}<a href="{{ post.code }}" class="link-code"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Code</a>{% endif %}
+        </div>
+      </div>
+    </article>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+  </div>
+</div>

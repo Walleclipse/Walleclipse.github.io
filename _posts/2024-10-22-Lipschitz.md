@@ -11,6 +11,4 @@ location: "Munich, Germany"
 arxiv: https://openreview.net/forum?id=Mk2pq3Gjq1
 ---
 
-
-
-This paper examines neural network robustness in perception systems, highlighting sensitivity to small-scale perturbations. It identifies the Lipschitz constant as a key robustness metric, deriving an analytical expression to estimate and enhance robustness based on network architecture.
+A self-driving car's neural network works flawlessly in testing—then fails on a slightly different road sign. Why? Neural networks can be surprisingly fragile to tiny input changes. We show that the Lipschitz constant—a measure of how much outputs can change given small input perturbations—is the key to understanding and improving robustness. Better yet, we derive analytical expressions to estimate this from the network architecture itself, opening doors to designing inherently robust perception systems.

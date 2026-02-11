@@ -13,4 +13,4 @@ blog: http://icontrol.ri.cmu.edu/news/2022FordDemo.html
 news: https://www.cs.cmu.edu/news/2022/robot-perception-action
 ---
 
-This paper introduces a framework for proactive human-robot collaboration, featuring intention prediction with human-in-the-loop training and robust safe control for interactive safety. The framework is demonstrated on a co-assembly task with a Kinova Gen3 robot.
+Most robots wait for commands—ours anticipates. We built a proactive human-robot collaboration system that predicts your intentions and acts accordingly, while safety controls ensure the robot never endangers its human partner. The framework learns with humans in the loop, adapting to individual work styles. Demonstrated on a Kinova Gen3 robot in co-assembly tasks, it's a glimpse of how future factory floors might operate.

@@ -1,0 +1,33 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="container">
+  <header class="page-header">
+    <h1>Projects</h1>
+    <p>Coursework and personal projects</p>
+  </header>
+
+  <div class="project-grid">
+    {% for post in site.posts %}
+    {% for cat in post.categories %}
+    {% if cat == 'project' %}
+    <article class="project">
+      <div class="project-image">
+        <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+      </div>
+      <h3 class="project-title">{{ post.title }}</h3>
+      {% if post.course %}<p class="project-meta">{{ post.course }}</p>{% endif %}
+      <p class="project-desc">{{ post.content | strip_html | truncatewords: 25 }}</p>
+      <div class="project-links">
+        {% if post.code %}<a href="{{ post.code }}" class="link-code"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Code</a>{% endif %}
+        {% if post.video %}<a href="{{ post.video }}" class="link-video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Video</a>{% endif %}
+        {% if post.website %}<a href="{{ post.website }}" class="link-default"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Website</a>{% endif %}
+      </div>
+    </article>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+  </div>
+</div>

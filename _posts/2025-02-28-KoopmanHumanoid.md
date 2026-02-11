@@ -14,5 +14,4 @@ code: https://github.com/intelligent-control-lab/Incremental-Koopman
 highlight: true
 ---
 
-
-This paper presents a continual learning algorithm for iteratively refining Koopman dynamics in high-dimensional legged robots. The method ensures monotonic convergence of linear approximation error and achieves high control performance on Unitree and ANYmal robots across diverse terrains with linear MPC controllers.
+Teaching robots to walk is hard—keeping them walking well as terrain changes is harder. We introduce a continual learning framework that lets legged robots refine their dynamics model on the fly using Koopman theory. The magic? We mathematically guarantee the model only gets better over time (no catastrophic forgetting!). Running simple linear MPC on top, our Unitree and ANYmal robots traverse diverse terrains with surprisingly high performance. It's a step toward robots that truly adapt as they explore.

@@ -14,5 +14,4 @@ video: https://www.youtube.com/watch?v=fB9-UE3Q4bE
 highlight: true
 ---
 
-
-This work introduces an online adaptation method with feedforward compensation, optimizing models using critical data from a memory buffer. It outperforms previous methods in slow time-varying systems, offering improved accuracy and robustness with a smaller error bound.
+Robots deployed in the real world encounter environments that slowly drift over time—lighting changes, surfaces wear down, sensors degrade. Standard models trained offline can't keep up. Our solution: online feedforward adaptation that continuously fine-tunes the model using the most informative samples from recent experience. The payoff? Better predictions with provably smaller error bounds, even as the world changes around the robot.

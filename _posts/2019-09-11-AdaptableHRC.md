@@ -13,5 +13,4 @@ code: https://github.com/intelligent-control-lab/Intent_Traj_Prediction
 video: https://www.youtube.com/watch?v=LgtkWJ_oCR0
 ---
 
-
-This paper proposes a multi-task model for predicting human trajectories and intentions, offering flexibility and adaptability for rapid integration into human-robot collaboration systems.
+For robots to work safely alongside humans, they need to predict what we'll do next. We developed a multi-task model that simultaneously forecasts human trajectories and intentions—and crucially, adapts quickly to new situations. The model's flexibility makes it practical for real human-robot collaboration, where conditions change constantly and safety is paramount.

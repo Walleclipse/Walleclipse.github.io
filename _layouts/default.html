@@ -1,474 +1,61 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-E00L9PT3V9');
-  </script>
-  <title>{{ site.name }}</title>
-
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
-  <meta name="author" content="{{ site.name }}" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Abulikemu Abuduweili - Robotics Researcher at Apple. Ph.D. from CMU.">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
 
+  <script>
+    // Initialize theme before page renders to prevent flash
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
-
 <body>
-  <!-- Navigation Bar -->
-  <div style="width:100%; background: rgba(255, 218, 185, 0.8); text-align: center; padding: 10px 0; position: fixed; top: 0; z-index: 1000;">
-    <a href="/" style="margin: 0 15px; font-weight: bold; text-decoration: none; color: #000;">Abulikemu Abuduweili</a>
-    <a href="#home" style="margin: 0 15px; font-weight: bold; text-decoration: none; color: #000;">Home</a>
-    <a href="#research" style="margin: 0 15px; font-weight: bold; text-decoration: none; color: #000;">Research</a>
-    <a href="#service" style="margin: 0 15px; font-weight: bold; text-decoration: none; color: #000;">Service</a>
-    <a href="#teaching" style="margin: 0 15px; font-weight: bold; text-decoration: none; color: #000;">Teaching</a>
-    <a href="#projects" style="margin: 0 15px; font-weight: bold; text-decoration: none; color: #000;">Side Project</a>
-    <a href="#misc" style="margin: 0 15px; font-weight: bold; text-decoration: none; color: #000;">Misc</a>
-  </div>
+  {% include nav.html %}
 
- <!-- Main Content -->
-  <a id="home"></a>
-  <br>
-  <table style="width:100%;max-width:1100px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
-              <h1>
-                Abulikemu  Abuduweili
-              </h1>
-              <p>
-                I am a Researcher in Robotics at Apple, and I earned my Ph.D. in Electrical and Computer Engineering from Carnegie Mellon University.
-                I was advised by <a href="https://www.ri.cmu.edu/ri-faculty/changliu-liu/">Prof. Changliu Liu</a>, in the Robotics Institute, School of Computer Science.
-                Before joining CMU, I spent an enriching year as a research assistant with <a href="https://www.humphreyshi.com/">Prof. Humphrey Shi</a>.
-                I hold a Bachelor's and a Master's degree from the <a href="https://eecs.pku.edu.cn/en/">School of Electronics Engineering and Computer Science</a>  at Peking University.
-                I have also accumulated valuable industry experience through internships at Microsoft Research Redmond, Toyota Research Institute, Baidu Research, and Microsoft Research Asia.
-              </p>
-              <p>
-                My research focuses on Machine Learning, Robotics, Embodied AI, and Computer Vision.
-              </p>
-<!--              <p> -->
-<!--                My official name is Abulikemu Abuduweili, but I also go by Abduwali <span style="font-family: 'serif';">/ˌæb du wæ li/</span> or Abu <span style="font-family: 'serif';">/ˈɑ bu/</span>.-->
-<!--              </p>-->
-<!--              <p style="color: red;">I am actively seeking a full-time, research-oriented position. If my expertise aligns with your needs, please feel free to reach out.-->
-<!--              </p>-->
-              <p style="text-align:center">
-                <a href="https://www.ri.cmu.edu/ri-people/abulikemu-abuduweili-2/">Email</a> &nbsp;/&nbsp;
-                <a href="https://github.com/Walleclipse">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=6Oro5g8AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                <!--  <a href="https://drive.google.com/file/d/1cL-gzPteHRidSNOLHphGE02Iitv1LyjU/view?usp=drive_link">CV</a> &nbsp;/&nbsp; -->
-                <a href="https://www.linkedin.com/in/abulikemu-abuduweili-9305b0171/"> LinkedIn </a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:30%;max-width:30%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/Abulikemu.jpg">
-            </td>
-          </tr>
-        </table>
+  <main>
+    {{ content }}
+  </main>
 
-        <!-- Research Section -->
-        <a id="research"></a>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-<p>
-    I am broadly interested in the intersection of robotics and machine learning, with a particular focus on advancing lifelong, efficient, and robust learning and autonomy. Below are the topics I contribute to, along with references to related works. (Some papers cover multiple topics.)
-</p>
-<ul>
-    <li>
-        <strong>Continual Learning:</strong>
-        Memory-replay (<a href="https://ieeexplore.ieee.org/abstract/document/10242249">T-RO 2023</a>, <a href="https://proceedings.mlr.press/v229/abuduweili23a">CoRL 2023</a>),
-        Dynamic Architecture (<a href="https://proceedings.mlr.press/v283/li25b.html">L4DC 2025</a>),
-        Model Adaptation and Test-time Adaptation (<a href="https://proceedings.mlr.press/v229/abuduweili23a">CoRL 2023</a>, <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/acs.3198">ACSP 2021</a>, <a href="https://proceedings.mlr.press/v120/abuduweili20a.html">L4DC 2020</a>)
-    </li>
-            <li>
-        <strong>Data-efficient Learning:</strong>
-        Semi/self-supervised Learning (<a href="https://doi.org/10.1016/j.patcog.2023.109831">PR 2023</a>, <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Abuduweili_Adaptive_Consistency_Regularization_for_Semi-Supervised_Transfer_Learning_CVPR_2021_paper.html">CVPR 2021</a>),
-        Transfer Learning (<a href="https://doi.org/10.1016/j.patcog.2023.109831">PR 2023</a>, <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Abuduweili_Adaptive_Consistency_Regularization_for_Semi-Supervised_Transfer_Learning_CVPR_2021_paper.html">CVPR 2021</a>),
-        Few-shot Learning (<a href="https://proceedings.neurips.cc/paper_files/paper/2021/hash/91bc333f6967019ac47b49ca0f2fa757-Abstract.html">NeurIPS 2021</a>)
-    </li>
-    <li>
-        <strong>Robot Learning:</strong>
-        Human-robot Collaboration (<a href="https://arxiv.org/abs/2411.15711">arXiv 2024</a>, <a href="https://ieeexplore.ieee.org/abstract/document/10252579">CCTA 2023</a>, <a href="https://arxiv.org/abs/1909.05089">AI-HRI 2019</a>),
-        Motion/Behavior Prediction (<a href="https://proceedings.mlr.press/v229/abuduweili23a">CoRL 2023</a>, <a href="https://proceedings.mlr.press/v120/abuduweili20a.html">L4DC 2020</a>, <a href="https://arxiv.org/abs/1909.05089">AI-HRI 2019</a>),
-        SLAM (<a href="https://ieeexplore.ieee.org/abstract/document/10242249">T-RO 2023</a>, <a href="https://arxiv.org/abs/2405.04812">arXiv 2022</a>),
-        Manipulation (<a href="https://openreview.net/forum?id=A6ikGJRaKL">CoRL 2024</a>),
-        Locomotion (<a href="https://proceedings.mlr.press/v283/li25b.html">L4DC 2025</a>),
-        Reinforcement Learning (<a href="https://openreview.net/forum?id=61TKzU9B96">TMLR 2023</a>)
-    </li>
-    <li>
-        <strong>Robustness and Safety:</strong>
-        Neural Network Robustness (<a href="https://openreview.net/forum?id=Mk2pq3Gjq1">CoRL Safe-ROL 2024</a>),
-        Certified Training (<a href="https://openreview.net/forum?id=iV0jktFZ5Y">TMLR 2024</a>),
-        Safe Control (<a href="https://ieeexplore.ieee.org/abstract/document/10252579">CCTA 2023</a>)
-    </li>
-        <li>
-        <strong>Optimization:</strong>
-        Adaptive Gradient Method (<a href="https://openreview.net/forum?id=pJVxTOUCkw">CPAL 2025</a>),
-        Extended Kalman Filter (<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/acs.3198">ACSP 2021</a>, <a href="https://proceedings.mlr.press/v120/abuduweili20a.html">L4DC 2020</a>)
-    </li>
-<!--    <li>-->
-<!--        <strong>Generative Models:</strong>-->
-<!--        Diffusion Models (<a href="https://arxiv.org/abs/2412.05488">arXiv 2024-3</a>),-->
-<!--        GAN (<a href="https://ieeexplore.ieee.org/abstract/document/10242249">T-RO 2023</a>),-->
-<!--        LLM and RAG (<a href="https://www.medrxiv.org/content/10.1101/2024.07.10.24310247v2">medRxiv 2024</a>),-->
-<!--        Encoder-Decoder (<a href="https://aclanthology.org/P19-2032/">ACL-SRW 2019</a>)-->
-<!--    </li>-->
-<!--        <li>-->
-<!--        <strong>Neural Network Architecture:</strong>-->
-<!--        Transformer (<a href="https://arxiv.org/abs/2104.05704">arXiv 2021</a>),-->
-<!--        Graph Neural Networks (<a href="https://proceedings.neurips.cc/paper_files/paper/2021/hash/91bc333f6967019ac47b49ca0f2fa757-Abstract.html">NeurIPS 2021</a>)-->
-<!--    </li>-->
-</ul>
-              <p></p>
-              <p>
-<!--                I'm broadly interested in the intersection of robotics and machine learning, with a focus on areas such as continual learning, robot learning, human-robot collaboration, optimization,  data-efficient learning, time-series prediction, test-time adaptation, visual perception, and generative models.-->
-                Below is a list of my research papers  (* denotes equal contribution), with some papers <span class="highlight">highlighted</span>.  For the full list of publications, please visit my <a href="https://scholar.google.com/citations?user=6Oro5g8AAAAJ">Google Scholar</a>.
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  {% include footer.html %}
 
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr style="{% if post.highlight %}background-color: rgba(255, 255, 204, 0.7);{% endif %}">
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:400px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
+  <script>
+    // Dark mode toggle
+    (function() {
+      var toggle = document.getElementById('theme-toggle');
+      if (!toggle) return;
 
-              {% if post.venue %}
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              {% endif %}
-              {% if post.award %}
-              <br>
-              <h3>{{post.award}}</h3>
-              {% endif %}
-              {% if post.collaborator %}
-              <br>
-              In collaboration with <em>{{post.collaborator}}</em>
-              {% endif %}
-              {% if post.sponsor %}
-              <br>
-              In part supported by <em>{{post.sponsor}}</em>
-              {% endif %}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">paper</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              {% if post.blog %}
-              <a href="{{post.blog}}">blog</a> /
-              {% endif %}
-              {% if post.news %}
-              <a href="{{post.news}}">news</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
+      var sunIcon = toggle.querySelector('.icon-sun');
+      var moonIcon = toggle.querySelector('.icon-moon');
 
-<!--        <br>-->
-<!--        <br>-->
-<!--        <br>-->
-<!--        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">-->
-<!--          <tr>-->
-<!--            <td style="padding:2.5%;width:100%;vertical-align:middle">-->
-<!--              <h2>Award</h2>-->
-<!--              <ul>-->
-<!--                <li><h3>2023/11</h3> CoRL Travel Grant.</li>-->
-<!--                <li><h3>Fall 2021-Spring 2022</h3> CIT Dean’s Fellowship at CMU.</li>-->
-<!--                <li><h3>2021/8</h3> Best Paper Runner‑up at IJCAI Weakly Supervised Representation Learning Workshop.</li>-->
-<!--                <li><h3>2020/8</h3> Excellent Graduation Thesis (M.S.) at Peking University.</li>-->
-<!--                <li><h3>2020/5</h3> Incubic/Milton Chang Travel Grant at CLEO.</li>-->
-<!--                <li><h3>2017/6</h3> (B.S.) Graduates with High Honors (Summa Cum Laude) at Peking University.</li>-->
+      function updateIcons() {
+        var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        if (sunIcon) sunIcon.style.cssText = isDark ? 'display: block !important' : 'display: none !important';
+        if (moonIcon) moonIcon.style.cssText = isDark ? 'display: none !important' : 'display: block !important';
+      }
 
-<!--              </ul>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--        </table>-->
+      updateIcons();
 
-        <!-- Service Section -->
-        <a id="service"></a>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Service</h2>
-              <p><h3>Reviewer</h3> for 
-                <ul>
-                  <li><h3>Journals:</h3> IEEE Transactions on Robotics (T-RO), IEEE Robotics and Automation Letters (RA-L), Pattern recognition, IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), Transactions on Machine Learning Research (TMLR). </li>
-                  <li><h3>Conferences:</h3> NeurIPS, ICML, ICLR, ICRA, CVPR, ECCV, ICCV, ACCV, WACV, AAAI.</li>
-                </ul>
-              </p>
-              <p><h3>Program Committee Member</h3> for
-                <ul>
-                  <li>ACL: Student Research Workshop </li>
-                </ul>
-              </p>
-            </td>
-          </tr>
-        </table>
-
-        <!-- Teaching Section -->
-        <a id="teaching"></a>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Teaching</h2>
-              <p>Teaching assistant for <a href="https://18661.github.io/">18-661: Introduction to Machine Learning for Engineers (CMU)</a>. Instructor: <a href="https://www.ece.cmu.edu/directory/bios/chi-yuejie.html">Prof. Yuejie Chi</a> and <a href="https://www.andrew.cmu.edu/user/beidic/">Prof. Beidi Chen</a>.
-              </p>
-              <p>Teaching assistant for <a href="https://18-786.github.io/">18-786: Introduction to Deep Learning (CMU)</a>. Instructor: <a href="https://www.ece.cmu.edu/directory/bios/sankaranarayanan-aswin.html">Prof. Aswin Sankaranarayanan</a>.
-              </p>
-              <p>Teaching assistant for Optoelectronics (PKU). Instructor: <a href="https://scholar.google.com/citations?user=FrNUsgEAAAAJ">Prof. Zhiping Zhou</a>.
-              </p>
-            </td>
-          </tr>
-        </table>
-
-        <!-- Projects Section -->
-        <a id="projects"></a>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Side Research</h2>
-              <p> Apart from my research in AI, I have also gained substantial experience in optics and lasers, particularly during my master's studies. Below are some of the papers I have contributed to that focus on topics outside of AI.
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'optics' or cat =='med' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:400px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              {% if post.venue %}
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              {% endif %}
-              {% if post.award %}
-              <br>
-              <h3>{{post.award}}</h3>
-              {% endif %}
-              {% if post.collaborator %}
-              <br>
-              In collaboration with <em>{{post.collaborator}}</em>
-              {% endif %}
-              {% if post.sponsor %}
-              <br>
-              In part supported by <em>{{post.sponsor}}</em>
-              {% endif %}
-              {% if post.course %}
-              <br>
-              <em>{{post.course}}</em>
-              {% endif %}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">paper</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              {% if post.news %}
-              <a href="{{post.news}}">news</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Side Projects</h2>
-              <p> These include courseworks and side projects.
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'project' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:400px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              {% if post.venue %}
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              {% endif %}
-              {% if post.award %}
-              <br>
-              <h3>{{post.award}}</h3>
-              {% endif %}
-              {% if post.collaborator %}
-              <br>
-              In collaboration with <em>{{post.collaborator}}</em>
-              {% endif %}
-              {% if post.sponsor %}
-              <br>
-              In part supported by <em>{{post.sponsor}}</em>
-              {% endif %}
-              {% if post.course %}
-              <br>
-              <em>{{post.course}}</em>
-              {% endif %}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">paper</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              {% if post.news %}
-              <a href="{{post.news}}">news</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-
-        <!-- Hobby Section -->
-        <a id="misc"></a>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Personal Stuff</h2>
-              <p> I speak Uyghur, Chinese, and English.  My official name is Abulikemu Abuduweili, but I also go by Abduwali <span style="font-family: 'serif';">/ˌɑb du wæ li/</span> or Abu <span style="font-family: 'serif';">/ˈɑ bu/</span>. <br>
-              I am deeply fascinated by Machine Learning, driven by the dream of achieving General AI to enhance life for everyone. Physics, especially Optics, captivates me with its profound mysteries. <br>
-              Outside of work, I enjoy football (Soccer), traveling, and playing board games.
-              </p>
-              <p></p>
-              <p style="text-align: left; font-style: italic;">
-                Along life’s road I have always sought truth,<br>
-                In the search for verity, thought was always my guide.<br>
-                My heart yearned without end for a chance of expression,<br>
-                And longed to find words of meaning and grace.
-            </p>
-            </td>
-          </tr>
-        </table>
-
-        <br>
-        <!-- Footer -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+      toggle.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateIcons();
+      });
+    })();
+  </script>
 </body>
-
 </html>
-

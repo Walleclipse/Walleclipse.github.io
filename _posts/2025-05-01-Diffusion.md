@@ -10,5 +10,4 @@ venue: "Transactions on Machine Learning Research (TMLR)"
 arxiv: https://arxiv.org/abs/2412.05488
 ---
 
-
-This paper proposes a novel method to enhance diffusion model sample generation by aligning noise level estimates with the true distance to the underlying manifold. A noise level correction network refines estimates during denoising, compatible with any scheduler (e.g., DDIM), and extends to image restoration tasks like inpainting, deblurring, super-resolution, colorization, and compressed sensing.
+Diffusion models generate stunning images, but what if we could make them even better? We discovered that the standard denoising process has a blind spot: it doesn't know how "noisy" an image truly is at each step. Our fix? A lightweight correction network that recalibrates noise estimates on the fly, guiding generation toward cleaner, sharper results. The best part: it plugs into any diffusion model and scheduler (DDIM, etc.), and naturally extends to image restoration tasks—inpainting, deblurring, super-resolution, and more.
