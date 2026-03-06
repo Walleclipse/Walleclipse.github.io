@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Whole-Body Safe Control of Robotic Systems with Koopman Neural Dynamics"
-date:   2026-05-19 18:08:39 +00:00
+date:   2026-03-06 18:08:39 +00:00
 image: /images/go2_safe_isaac_cut.png
 categories: research
 author: "Abulikemu Abuduweili"
