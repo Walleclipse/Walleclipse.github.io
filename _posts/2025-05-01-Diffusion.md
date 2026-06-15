@@ -7,7 +7,8 @@ categories: research
 author: "Abulikemu Abuduweili"
 authors: "<strong>Abulikemu Abuduweili</strong>, Chenyang Yuan, Changliu Liu, Frank Permenter"
 venue: "Transactions on Machine Learning Research (TMLR)"
-arxiv: https://arxiv.org/abs/2412.05488
+arxiv: https://openreview.net/forum?id=y8VXikiIU0 
+code: https://github.com/Walleclipse/Diffusion-NLC/
 ---
 
 Diffusion models generate stunning images, but what if we could make them even better? We discovered that the standard denoising process has a blind spot: it doesn't know how "noisy" an image truly is at each step. Our fix? A lightweight correction network that recalibrates noise estimates on the fly, guiding generation toward cleaner, sharper results. The best part: it plugs into any diffusion model and scheduler (DDIM, etc.), and naturally extends to image restoration tasks—inpainting, deblurring, super-resolution, and more.

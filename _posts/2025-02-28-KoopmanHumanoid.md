@@ -7,7 +7,7 @@ categories: research
 author: "Abulikemu Abuduweili"
 authors: "Feihan Li, <strong>Abulikemu Abuduweili</strong>, Yifan Sun, Rui Chen, Weiye Zhao, Changliu Liu"
 venue: " Annual Learning for Dynamics & Control Conference (L4DC)"
-arxiv: https://arxiv.org/abs/2411.14321
+arxiv: https://proceedings.mlr.press/v283/li25b.html 
 video: https://youtu.be/5tsSdKkTc4M?feature=shared
 website: https://intelligent-control-lab.github.io/Incremental-Koopman/  
 code: https://github.com/intelligent-control-lab/Incremental-Koopman
